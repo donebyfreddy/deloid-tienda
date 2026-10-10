@@ -1,0 +1,39 @@
+.standard__image {
+  aspect-ratio: 4 / 3;
+  height: auto;
+  min-height: 0;
+  background: #f7f7f5;
+}
+
+.standard__video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.standard__video-toggle {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  background: rgba(32, 35, 34, .72);
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  backdrop-filter: blur(6px);
+}
+
+.standard__video-toggle:hover { background: #202322; }
+
+@media (prefers-reduced-motion: reduce) {
+  .standard__video-toggle { display: none; }
+}
